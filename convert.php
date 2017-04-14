@@ -29,7 +29,7 @@ $sql = "SELECT * from $module";
 mysql_close($dbhandle);
 
 // Just to see to staged
-// Lets try
+
 echo "Hello";
 /*
 select *
