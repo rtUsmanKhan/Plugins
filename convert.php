@@ -27,6 +27,10 @@ $sql = "SELECT * from $module";
         fwrite($fp, json_encode($emparray));
       fclose($fp);
 mysql_close($dbhandle);
+
+// Just to see to staged
+// Lets try
+echo "Hello";
 /*
 select *
 from  accounts
