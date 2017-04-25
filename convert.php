@@ -24,6 +24,6 @@ $sql = "SELECT * from $module";
       fclose($fp);
 mysql_close($dbhandle);
 // Just to see to staged
-// Lets try again
+// Lets try again with diffmerge tool
 echo "Hello";
 ?>
