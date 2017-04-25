@@ -31,9 +31,8 @@ mysql_close($dbhandle);
 
 /*
 select *
-from  accounts
-where date_modified >= DATE_SUB(NOW(),INTERVAL 8 HOUR)
-
+from  accounts done very well
+I dont know
 
 UPDATE tableName SET columnName = FLOOR( 1 + RAND( ) *3 );
 */
