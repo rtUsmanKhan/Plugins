@@ -1,7 +1,7 @@
 <?php
 $username = "root";
 $password = "123";
-$hostname = "192.168.3.81"; 
+$hostname = "My Host"; 
 //connection to the database
 $dbhandle = mysql_connect($hostname, $username, $password) 
  or die("Unable to connect to MySQL");
@@ -24,6 +24,6 @@ $sql = "SELECT * from $module";
       fclose($fp);
 mysql_close($dbhandle);
 // Just to see to staged
-// Lets try
+// Lets try again
 echo "Hello";
 ?>
