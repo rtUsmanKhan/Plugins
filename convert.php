@@ -1,8 +1,8 @@
 <?php
 $username = "root";
 $password = "123";
-$hostname = "localhost"; 
 
+$hostname = "My Host";
 //connection to the database
 $dbhandle = mysql_connect($hostname, $username, $password) 
  or die("Unable to connect to MySQL");
@@ -27,6 +27,7 @@ $sql = "SELECT * from $module";
         fwrite($fp, json_encode($emparray));
       fclose($fp);
 mysql_close($dbhandle);
+
 /*
 select *
 from  accounts
@@ -35,4 +36,7 @@ where date_modified >= DATE_SUB(NOW(),INTERVAL 8 HOUR)
 
 UPDATE tableName SET columnName = FLOOR( 1 + RAND( ) *3 );
 */
+// Just to see to staged
+// Lets try again
+echo "Hello";
 ?>
