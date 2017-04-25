@@ -9,9 +9,9 @@ $dbhandle = mysql_connect($hostname, $username, $password)
 echo "Connected to MySQL<br>";
 
 //select a database to work with
-$selected = mysql_select_db("sugar7",$dbhandle) 
+$selected = mysql_select_db("rtpentaho-sugar",$dbhandle) 
 
-  or die("Could not select examplez");
+  or die("Could not select examplesss");
 
 $module = 'cases';
 $sql = "SELECT * from $module";
