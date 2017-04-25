@@ -1,17 +1,12 @@
 <?php
 $username = "root";
 $password = "123";
-<<<<<<< HEAD
 $hostname = "localhost"; 
 
-=======
-$hostname = "192.168.3.81"; 
->>>>>>> Usman
 //connection to the database
 $dbhandle = mysql_connect($hostname, $username, $password) 
  or die("Unable to connect to MySQL");
 echo "Connected to MySQL<br>";
-<<<<<<< HEAD
 
 //select a database to work with
 $selected = mysql_select_db("sugar7",$dbhandle) 
@@ -21,14 +16,6 @@ $module = 'cases';
 $sql = "SELECT * from $module";
 	$result = mysql_query($sql);
 
-=======
-//select a database to work with
-$selected = mysql_select_db("sugar7",$dbhandle) 
-  or die("Could not select examples");
-$module = 'cases';
-$sql = "SELECT * from $module";
-	$result = mysql_query($sql);
->>>>>>> Usman
         //create an array
         $emparray = array();
         while($row =mysql_fetch_assoc($result))
@@ -40,11 +27,6 @@ $sql = "SELECT * from $module";
         fwrite($fp, json_encode($emparray));
       fclose($fp);
 mysql_close($dbhandle);
-<<<<<<< HEAD
-
-// Just to see to staged
-
-echo "Hello";
 /*
 select *
 from  accounts
@@ -53,9 +35,4 @@ where date_modified >= DATE_SUB(NOW(),INTERVAL 8 HOUR)
 
 UPDATE tableName SET columnName = FLOOR( 1 + RAND( ) *3 );
 */
-=======
-// Just to see to staged
-// Lets try
-echo "Hello";
->>>>>>> Usman
 ?>
